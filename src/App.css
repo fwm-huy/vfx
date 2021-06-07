@@ -1,0 +1,78 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  background: #141414; /* from Netflix */
+  color: #fff;
+}
+
+h2,
+.logo {
+  padding: 1em 0 0 .5em;
+}
+
+h1.ui.header {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.logo {
+  color:red;
+}
+
+.ui.segment {
+  background: #181818;
+}
+
+.img-container {
+  position: relative;
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 300px;
+  margin: .25em;
+}
+
+.img-container img {
+  width: 300px;
+  height: 445px;
+}
+
+.movie-list > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap !important;
+  display: flex;
+}
+
+.img-container:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  transition: 0.5 ease;
+  opacity: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.title,
+.year {
+  text-align: left;
+}
